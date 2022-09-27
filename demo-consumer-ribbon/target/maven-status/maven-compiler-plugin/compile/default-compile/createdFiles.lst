@@ -1,0 +1,4 @@
+org\rain\service\ConsumerService.class
+org\rain\service\impl\ConsumerServiceImpl.class
+org\rain\ConsumerApplication.class
+org\rain\controller\ConsumerController.class

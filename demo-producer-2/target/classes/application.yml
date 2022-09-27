@@ -1,0 +1,36 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: demo-producer
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://47.102.118.42:3306/rain?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: rain1234
+  cloud:
+    nacos:
+      discovery:
+        ###nacos注册地址
+        server-addr: localhost:8850
+#        namespace: local
+        username: nacos
+        password: nacos
+      config:
+        server-addr: localhost:8850
+        file-extension: yaml
+#      config:
+#        server-addr: 47.102.118.42:8850
+#        file-extension: yml
+#      discovery:
+#        server-addr: 47.102.118.42:8850
+#        username: nacos
+#        password: nacos
+#        register-enabled: false
+
+#  influx:
+#    url: http://localhost:8086
+#    user: root
+#    password: root

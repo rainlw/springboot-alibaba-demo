@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-common" />
+        <module name="demo-producer-2" />
+        <module name="demo-producer" />
+        <module name="demo-consumer" />
+        <module name="demo-sentinel" />
+        <module name="demo-consumer-ribbon" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="untitled" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo-common" options="-parameters" />
+      <module name="demo-consumer" options="-parameters" />
+      <module name="demo-consumer-ribbon" options="-parameters" />
+      <module name="demo-producer" options="-parameters" />
+      <module name="demo-producer-2" options="-parameters" />
+      <module name="demo-sentinel" options="-parameters" />
+      <module name="untitled" options="-parameters" />
+    </option>
+  </component>
+</project>
